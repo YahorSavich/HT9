@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Ng-YE-e0I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AZt-Uc-S5K">
+            <objects>
+                <navigationController id="1Ng-YE-e0I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4uP-b2-HsZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OsE-za-bfY" kind="relationship" relationship="rootViewController" id="MDP-Rs-OHh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MwW-3P-UKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1042" y="-719"/>
+        </scene>
+        <!--Common Controller-->
+        <scene sceneID="zNe-9u-dKD">
+            <objects>
+                <viewController storyboardIdentifier="CommonController" id="OsE-za-bfY" customClass="CommonController" customModule="HT9New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r3q-HE-Ywn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue7-Wh-Dd8">
+                                <rect key="frame" x="161" y="642" width="93" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Square"/>
+                                <connections>
+                                    <action selector="actionButtonSquare:" destination="OsE-za-bfY" eventType="touchUpInside" id="ajM-Ej-EhX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K70-yK-XKp">
+                                <rect key="frame" x="161" y="698" width="93" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ball"/>
+                                <connections>
+                                    <action selector="actionButtonBall:" destination="OsE-za-bfY" eventType="touchUpInside" id="Ac6-v6-25y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yth-21-YDJ">
+                                <rect key="frame" x="161" y="585" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cat"/>
+                                <connections>
+                                    <action selector="actionButtonCat:" destination="OsE-za-bfY" eventType="touchUpInside" id="yAY-Nd-gdH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FqY-US-hYj" colorLabel="IBBuiltInLabel-Orange"/>
+                        <color key="backgroundColor" red="0.94138145446777344" green="0.90403693914413452" blue="0.75031596422195435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QfN-Bk-L9e"/>
+                    <connections>
+                        <outlet property="buttonStyles" destination="yth-21-YDJ" id="2Mb-BM-nGa"/>
+                        <outlet property="buttonStyles2" destination="Ue7-Wh-Dd8" id="dlH-bw-pqx"/>
+                        <outlet property="buttonStyles3" destination="K70-yK-XKp" id="3Wl-8v-fc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iax-xT-Wr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381.15942028985512" y="-719.19642857142856"/>
+        </scene>
+        <!--Square-->
+        <scene sceneID="qnd-li-I1K">
+            <objects>
+                <viewController storyboardIdentifier="Square" id="7Fp-Mx-yJJ" customClass="Square" customModule="HT9New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WOk-Hq-eDd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GO2-U0-Tfj">
+                                <rect key="frame" x="141" y="722" width="133" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="СТАРТ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCreateSquare:" destination="7Fp-Mx-yJJ" eventType="touchUpInside" id="0mR-ts-ABV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39Y-F3-9Bq">
+                                <rect key="frame" x="238" y="144" width="105" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FORWARD &gt;"/>
+                                <connections>
+                                    <action selector="actionShowNext:" destination="7Fp-Mx-yJJ" eventType="touchUpInside" id="TuQ-KP-33V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2nq-wv-0wU"/>
+                        <color key="backgroundColor" red="0.82496720552444458" green="0.91422015428543091" blue="0.55022096633911133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStyles" destination="GO2-U0-Tfj" id="We0-Oi-mi5"/>
+                        <outlet property="buttonStyles2" destination="39Y-F3-9Bq" id="7uC-UZ-TeH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dr7-mf-gxB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-891.304347826087" y="9.375"/>
+        </scene>
+        <!--Ball-->
+        <scene sceneID="pdS-pq-rs8">
+            <objects>
+                <viewController storyboardIdentifier="Ball" id="9A6-c0-uaj" customClass="Ball" customModule="HT9New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2DM-QS-3Sg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FV6-L3-1ga">
+                                <rect key="frame" x="263" y="137" width="105" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FORWARD &gt;"/>
+                                <connections>
+                                    <action selector="actionShowNext:" destination="9A6-c0-uaj" eventType="touchUpInside" id="6Hi-WO-f5b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wBi-Dc-s5d"/>
+                        <color key="backgroundColor" red="0.61706030368804932" green="0.85071736574172974" blue="0.92314344644546509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStyles" destination="FV6-L3-1ga" id="5Pg-vj-2X0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofd-P9-vXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94.20289855072464" y="8.7053571428571423"/>
+        </scene>
+        <!--Ap And Disap Circle-->
+        <scene sceneID="E1r-KE-OMj">
+            <objects>
+                <viewController storyboardIdentifier="ApAndDisapCircle" id="aj2-oA-Jgb" customClass="ApAndDisapCircle" customModule="HT9New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gj1-DH-egw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYR-jp-IwR">
+                                <rect key="frame" x="288" y="126" width="105" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FORWARD &gt;"/>
+                                <connections>
+                                    <action selector="actionShowNext:" destination="aj2-oA-Jgb" eventType="touchUpInside" id="uHw-o6-5cU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1hd-YL-9s7"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStyles" destination="YYR-jp-IwR" id="19x-Qp-CU1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebL-Vs-wst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="9"/>
+        </scene>
+        <!--Swipe Controller-->
+        <scene sceneID="YXa-gZ-ohe">
+            <objects>
+                <viewController storyboardIdentifier="SwipeController" id="H3k-NA-L6X" customClass="SwipeController" customModule="HT9New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Btz-48-SMI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="4RG-rB-JWH">
+                                <rect key="frame" x="177" y="377" width="61" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gLy-oN-bkM" appends="YES" id="4iS-DM-oJM"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JMy-1e-XsQ"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gLy-oN-bkM" appends="YES" id="gOD-fm-Kev"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="down" destination="4RG-rB-JWH" id="pM3-6q-ltJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfX-Wz-cVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gLy-oN-bkM">
+                    <scrollTypes key="allowedScrollTypesMask" continuous="YES"/>
+                    <connections>
+                        <action selector="handlePan:" destination="H3k-NA-L6X" id="0Sq-qm-IeG"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="247.82608695652175" y="657.58928571428567"/>
+        </scene>
+        <!--Cat-->
+        <scene sceneID="Lxa-4t-LNw">
+            <objects>
+                <viewController storyboardIdentifier="Cat" id="vnX-v5-bVL" customClass="Cat" customModule="HT9New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wm3-en-fbM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8A-Se-IYG">
+                                <rect key="frame" x="261" y="98" width="105" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FORWARD &gt;"/>
+                                <connections>
+                                    <action selector="actionShowNext:" destination="vnX-v5-bVL" eventType="touchUpInside" id="Z3G-PX-lTb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wBq-vu-bmX"/>
+                        <color key="backgroundColor" red="0.91068756580352783" green="0.53673619031906128" blue="0.44249504804611206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZxX-wZ-YNy"/>
+                    <connections>
+                        <outlet property="buttonStyles" destination="R8A-Se-IYG" id="ZK4-Ia-1ET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H27-bO-Y4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.6521739130435" y="-719.19642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down" width="512" height="512"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
